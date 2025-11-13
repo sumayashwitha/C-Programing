@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(void){
+    int base, exponent, result=1,i;
+    printf("enter the base:");
+    scanf("%", &base);
+    printf("enter the exponent:");
+    scanf("%", %exponent);
+    for(i=1;i<=exponent;i++){
+          result=result* base;
+    }
+    printf("the power of the number is %d", result);
+   return 0;
+  }
