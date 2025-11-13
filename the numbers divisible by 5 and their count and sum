@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(void){
+   int start, end;
+   int i;
+   int count=0;
+   int sum=0;
+   printf("enter the starting number:");
+   scanf("%d",&start);
+   printf("enter the ending number:");
+   scanf("%d",&end);
+   if(start>end){
+        int t=start;start=end; end=t;
+   }
+   for(i=start;i<=end;i++){
+            if(i%5==0){
+                 count=count+1;
+                 sum= sum+i;
+            }
+    }
+    printf("\n %d is the count of numbers divisible by 5", count);
+    printf("\n %d is the sum of the numbers divisible by 5", sum);
+   return 0;
+}
