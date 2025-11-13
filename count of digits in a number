@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(void){
+  int num,count=0;
+  printf("enter the number:");
+  scanf("%d",&num);
+  if(num==0){
+       count=1;
+   }
+if(num<0){
+     num=-num;
+}
+while(num>0){
+    num=num/10;
+    count=count+1;
+}
+printf("%d is the count of the digits\n", count);
+return 0;
+}
+  
