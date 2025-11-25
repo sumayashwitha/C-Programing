@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main(){
+   int i, n,x, pos[100], neg[100], pc=0, nc=0;
+   int possum=0, negsum=0;
+  printf("enter the size of n:\n");
+  scanf("%d", &n);
+  printf("the elements in the array:\n");
+  for(i=0;i<n;i++){
+     scanf("%d", &x);
+     if(x>=0){
+         pos[pc++]=x;
+         possum+=x;
+     }else{
+        neg[nc++]=x;
+        negsum+=x;
+     }
+}
+ printf("the ordcer is\n");
+ for(i=0;i<pc;i++){
+printf("the sum of positive numbers is %d and the count is %d\n", possum, pos[i]);
+}
+  for(i=0;i<nc;i++){
+  printf("the sum of negative numbers is %d and the count is %d\n", negsum, neg[i]);
+}
+ return 0;
+}
