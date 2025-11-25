@@ -1,0 +1,43 @@
+1. \\sum of even or odd numbers in an array
+#include<stdio.h>
+int main(){
+int n, i, x;
+int evensum=0, oddsum=0;
+printf("enter the size of n:\n");
+scanf("%d", &n);
+printf("enter the elements:");
+for(i=0;i<n;i++){
+    scanf("%d", &x);
+    if(x%2==0){
+       evensum+=x;
+    }else{
+      oddsum+=x;
+    }
+}
+    printf("the sum of even numbers:%d\n", evensum);
+    printf("the sum of odd numbers:%d\n", oddsum);
+    return 0;
+    }
+
+
+  2. Seperating even numbers from an array
+    #include<stdio.h>
+    int main(){
+    int n,i, x, evens[100];
+    int ecount=0;
+    printf("enter the size of n:\n");
+    scanf("%d", &n);
+    printf("enter the numbers present:\n");
+    for(i=0;i<n;i++){
+         scanf("%d", &x);
+         if(x%2==0){
+              evens[ecount0]=x;
+              ecount++;
+          }
+    }
+    printf("the even numbers\n");
+    for(i=0;i<ecount;i++){
+       printf("%d", evens[i]);
+    }
+    return 0;
+    }
