@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main(){
+    int a[10][10];
+    int i,j,n;
+    int sum=0;
+    printf("enter the sixe of n matrix:");
+    scanf("%d",&n);
+    printf("enter the elements of the matrix:");
+    for(i=0;i<n;i++){
+       for(j=0;j<n;j++){
+         scanf("%d",&a[i][[j]);
+       }
+    }
+    for(i=0;i<n;i++){
+       printf("%d", a[i][i]);
+       sum+=a[i][i];
+    }
+    printf("\n");
+    printf("to only print diagnol elements in matrix");
+    for(i=0;i<n;i++){
+      for(j=0;j<n;j++){
+        if (i==j){
+           printf("%d\t", a[i][j]);
+        }else{
+           printf("0\t");
+        }
+      }
+      printf("\n");
+    }
+return 0;
+}
+      
